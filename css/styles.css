@@ -1,0 +1,138 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  margin-top: 10rem;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+}
+
+picture img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  height: 30rem;
+}
+.content {
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  padding: 5%;
+  width: 45%;
+  height: 30rem;
+}
+
+.first-paragraph {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+.first-heading {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+}
+.second-paragraph {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  width: 15rem;
+}
+.third-paragraph {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.fourth-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  color: hsl(228, 12%, 48%);
+  position: relative;
+  top: -12%;
+  left: 50%;
+}
+
+.btn-primary {
+  background-color: hsl(158, 36%, 37%) !important;
+  border-color: hsl(158, 36%, 37%) !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative !important;
+  top: -60%;
+}
+.btn-primary:hover {
+  background-color: hsl(159, 84%, 10%) !important;
+}
+
+.btn-primary svg {
+  margin-right: 3%;
+  width: 7%;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    margin-left: 50%;
+    width: 40rem;
+  }
+  picture img {
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 0%;
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .content {
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    width: 100%;
+    height: 41rem;
+  }
+  .first-paragraph {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+  .first-heading {
+    font-size: 4rem;
+  }
+  .second-paragraph {
+    font-size: 1.5rem;
+    width: 31.5rem;
+  }
+  .third-paragraph {
+    font-size: 4rem;
+  }
+  .fourth-paragraph {
+    font-size: 1.3rem;
+    position: relative;
+  }
+  .btn-primary {
+    height: 150%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  .btn-primary:hover {
+    background-color: hsl(159, 84%, 10%) !important;
+  }
+  .btn-primary svg {
+    width: 7%;
+  }
+  .attribution {
+    text-align: center;
+  }
+}
