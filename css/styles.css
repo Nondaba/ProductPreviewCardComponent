@@ -8,6 +8,8 @@ body {
   background-color: hsl(30, 38%, 92%);
   margin-top: 10rem;
   min-height: 100vh;
+
+  align-items: center;
 }
 .container {
   display: flex;
@@ -19,16 +21,16 @@ picture img {
   display: block;
   object-fit: cover;
   max-width: 100%;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   height: 30rem;
 }
 .content {
   background-color: hsl(0, 0%, 100%);
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   padding: 5%;
-  width: 45%;
+  width: 43%;
   height: 30rem;
 }
 
@@ -46,6 +48,7 @@ picture img {
   color: hsl(228, 12%, 48%);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+
   width: 15rem;
 }
 .third-paragraph {
@@ -60,7 +63,7 @@ picture img {
   color: hsl(228, 12%, 48%);
   position: relative;
   top: -12%;
-  left: 50%;
+  left: 60%;
 }
 
 .btn-primary {
@@ -71,6 +74,7 @@ picture img {
   font-size: 14px;
   position: relative !important;
   top: -60%;
+  height: 130%;
 }
 .btn-primary:hover {
   background-color: hsl(159, 84%, 10%) !important;
@@ -81,14 +85,14 @@ picture img {
   width: 7%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .container {
     flex-direction: column;
     margin-left: 50%;
     width: 40rem;
   }
   picture img {
-    border-top-right-radius: 5%;
+    border-top-right-radius: 1rem;
     border-bottom-left-radius: 0%;
     display: block;
     object-fit: cover;
@@ -96,8 +100,8 @@ picture img {
   }
   .content {
     border-top-right-radius: 0%;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     width: 100%;
     height: 41rem;
   }
