@@ -30,7 +30,7 @@ picture img {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   padding: 5%;
-  width: 43%;
+  width: 45%;
   height: 30rem;
 }
 
@@ -63,7 +63,7 @@ picture img {
   color: hsl(228, 12%, 48%);
   position: relative;
   top: -12%;
-  left: 60%;
+  left: 50%;
 }
 
 .btn-primary {
@@ -85,7 +85,7 @@ picture img {
   width: 7%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .container {
     flex-direction: column;
     margin-left: 50%;
